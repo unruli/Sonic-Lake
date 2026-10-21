@@ -1,0 +1,26 @@
+{
+  "budget_pcm_multipliers": [0.05, 0.1, 0.25, 0.5, 1.0, 1.5, 2.0],
+  "quality_retentions": [0.6, 0.7, 0.8, 0.9, 0.95, 1.0],
+  "workloads": {
+    "balanced": {
+      "acoustic_event": 0.3333333333,
+      "emotion": 0.3333333333,
+      "lexical": 0.3333333334
+    },
+    "event_heavy": {
+      "acoustic_event": 0.8,
+      "emotion": 0.1,
+      "lexical": 0.1
+    },
+    "emotion_heavy": {
+      "acoustic_event": 0.1,
+      "emotion": 0.8,
+      "lexical": 0.1
+    },
+    "lexical_heavy": {
+      "acoustic_event": 0.1,
+      "emotion": 0.1,
+      "lexical": 0.8
+    }
+  }
+}

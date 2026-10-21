@@ -1,0 +1,51 @@
+{
+  "inventoried_on": "2026-10-12",
+  "datasets": {
+    "afrispeech": {
+      "audio_count": 100,
+      "path": "${AFRISPEECH_SRC}/Audio/Afrispeech200",
+      "status": "present"
+    },
+    "crema_d": {
+      "audio_count": 300,
+      "path": "${ECHODB_ROOT}/data/raw/cremad/wav",
+      "status": "present_subset"
+    },
+    "esc50": {
+      "audio_count": 2000,
+      "commit": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+      "license": "CC BY-NC 3.0",
+      "license_sha256": "f6aec3a3283a2efdcbb1feff334adad7ab17c097bdec0cbb4eebdb9e16886074",
+      "metadata_sha256": "ca660da60191a97de289983a05821c9382d852a38a2ba8428980816b68cf6246",
+      "path": "${SL_ROOT:-.}/data/external/ESC-50/audio",
+      "status": "present"
+    },
+    "librispeech_test_clean": {
+      "audio_count": 2620,
+      "path": "${CORPORA_ROOT}/LibriSpeech/test-clean",
+      "status": "present"
+    }
+  },
+  "codec_infrastructure": {
+    "registry": "${CODEC_EVAL_ROOT}/code/codecs/codec_registry.py",
+    "status": "present",
+    "working_registry_entries": [
+      "encodec_24khz",
+      "unicodec",
+      "dac",
+      "sematicodec",
+      "apcodec",
+      "languagecodec",
+      "mimicodec"
+    ],
+    "venv": "${CODEC_EVAL_ROOT}/.venv"
+  },
+  "existing_evidence_not_imported_as_new_results": {
+    "codec_probe_project": "${ICASSP_ROOT}/idea6_codec_token_probing",
+    "cremad_evaluations": "${ECHODB_ROOT}/results/cremad",
+    "reason": "May supply adapters and smoke checks, but SonicLake production tables must come from its frozen manifests and runs."
+  },
+  "cluster_modules": {
+    "ffmpeg": "ffmpeg/n6.1"
+  }
+}

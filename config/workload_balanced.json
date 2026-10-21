@@ -1,0 +1,17 @@
+{
+  "frequencies": {
+    "accent": 0.2,
+    "acoustic_event": 0.2,
+    "emotion": 0.2,
+    "lexical": 0.2,
+    "speaker": 0.2
+  },
+  "thresholds": {
+    "accent": 0.7,
+    "acoustic_event": 0.7,
+    "emotion": 0.7,
+    "lexical": 0.8,
+    "speaker": 0.8
+  }
+}
+

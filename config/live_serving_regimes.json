@@ -1,0 +1,179 @@
+{
+  "eligible_pairs": 48,
+  "regimes": [
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps"
+        ]
+      },
+      "budget_pcm_multiplier": 1.0,
+      "id": "r1",
+      "predicted_latency_reduction": 1.2282607268911748e-10,
+      "quality_retention": 0.9,
+      "single": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "flac@lossless_c8"
+        },
+        "representations": [
+          "flac@lossless_c8"
+        ]
+      },
+      "workload": "emotion_heavy"
+    },
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps"
+        ]
+      },
+      "budget_pcm_multiplier": 1.5,
+      "id": "r2",
+      "predicted_latency_reduction": 8.096655524522255e-10,
+      "quality_retention": 0.9,
+      "single": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "flac@lossless_c8"
+        },
+        "representations": [
+          "flac@lossless_c8"
+        ]
+      },
+      "workload": "balanced"
+    },
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps",
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "budget_pcm_multiplier": 2.0,
+      "id": "r3",
+      "predicted_latency_reduction": 0.012944950727871218,
+      "quality_retention": 0.9,
+      "single": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "flac@lossless_c8"
+        },
+        "representations": [
+          "flac@lossless_c8"
+        ]
+      },
+      "workload": "emotion_heavy"
+    },
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps",
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "budget_pcm_multiplier": 2.0,
+      "id": "r4",
+      "predicted_latency_reduction": 0.08533271886564348,
+      "quality_retention": 0.6,
+      "single": {
+        "assignment": {
+          "acoustic_event": "flac@lossless_c8",
+          "emotion": "flac@lossless_c8",
+          "lexical": "flac@lossless_c8"
+        },
+        "representations": [
+          "flac@lossless_c8"
+        ]
+      },
+      "workload": "balanced"
+    },
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps",
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "budget_pcm_multiplier": 2.0,
+      "id": "r5",
+      "predicted_latency_reduction": 0.33538851915045065,
+      "quality_retention": 1.0,
+      "single": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "pcm_s16le@source_sr",
+          "lexical": "pcm_s16le@source_sr"
+        },
+        "representations": [
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "workload": "event_heavy"
+    },
+    {
+      "adaptive": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "flac@lossless_c8",
+          "lexical": "opus@24kbps"
+        },
+        "representations": [
+          "flac@lossless_c8",
+          "opus@24kbps",
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "budget_pcm_multiplier": 2.0,
+      "id": "r6",
+      "predicted_latency_reduction": 0.5170290978872036,
+      "quality_retention": 1.0,
+      "single": {
+        "assignment": {
+          "acoustic_event": "pcm_s16le@source_sr",
+          "emotion": "pcm_s16le@source_sr",
+          "lexical": "pcm_s16le@source_sr"
+        },
+        "representations": [
+          "pcm_s16le@source_sr"
+        ]
+      },
+      "workload": "emotion_heavy"
+    }
+  ],
+  "selection_method": "even quantiles of predicted adaptive gain among PCM/FLAC/Opus-only feasible pairs",
+  "source_rows": 336
+}

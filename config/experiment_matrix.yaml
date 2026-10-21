@@ -1,0 +1,39 @@
+project: soniclake
+datasets:
+  - librispeech
+  - afrispeech
+  - crema_d
+  - esc50
+query_families:
+  - lexical
+  - speaker
+  - accent
+  - emotion
+  - acoustic_event
+representations:
+  lossless:
+    - pcm
+  conventional:
+    - opus_low
+    - opus_medium
+    - opus_high
+  neural:
+    - dac
+    - encodec
+    - mimi
+  derived:
+    - transcript_index
+    - task_embedding
+metrics:
+  systems:
+    - bytes_per_audio_hour
+    - encode_seconds_per_audio_hour
+    - decode_seconds_per_audio_hour
+    - query_latency_ms
+  quality:
+    - lexical_f1
+    - speaker_retrieval
+    - accent_accuracy
+    - emotion_f1
+    - acoustic_event_f1
+
